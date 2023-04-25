@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="/style3.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 50px;
+            left: 0;
+            background-color: grey;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fbf8f8;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 2;
+            width: 100%;
+            height: 50px;
+
+
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-top: -5px;
+            border-radius: 25px;
+        }
+
+        hr {
+            margin: 0 5px;
+        }
+
+        .navbar {
+            height: 70px;
+
+            border: 2px solid black;
+            color: black;
+        }
+
+        li {
+            height: 70px;
+            font-size: larger;
+
+
+        }
+
+        li a {
+            color: black;
+        }
+
+        .info {
+            width: 90%;
+            height: 100vh;
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+
+        p {
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .p {
+            font-size: 15px;
+            margin: 0px;
+            padding: 0PX;
+        }
+
+        .code {
+            font-size: 16px;
+        }
+
+        #sim p {
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.isquareit.edu.in/"><img src="/i2it.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/index3.html"><i class="fas fa-home"></i>Home</a></li>
+
+                        <li><a href="#"><i class="fas fa-user-friends"></i>Team</a></li>
+                        <li><a href="#"><i class="fas fa-comment-alt"></i>Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="sidenav">
+        <a href="#intro">Aim</a>
+        <hr>
+        <a href="#Objective">Concepts</a>
+        <hr>
+        <a href="#List">Algorithm</a>
+        <hr>
+        <a href="#Target">Simulation</a>
+        <hr>
+        <a href="#sim">Performance</a>
+        <hr>
+        <a href="#app">Application</a>
+        <hr>
+        <a href="#Ex">Exericse</a>
+        <hr>
+
+    </div>
+
+    <div class="main">
+        <h2>Sidebar</h2>
+        <div class="info" id="intro">
+            <h1>STACK</h1>
+            <hr>
+            <h3>Estimated Time</h3>
+            <p>1.5 hour</p>
+            <h3>learning Objectives of the Experiment</h3>
+            <p>In this experiment, we will be learning about: <br>
+
+            </p>
+        </div>
+        <hr>
+        <div class="info" id="Objective">
+            <div class="objective_content">
+                <p>
+                    A stack is a linear data structure in which the insertion of a new element and removal of an
+                    existing element takes place at the same end represented as the top of the stack.
+                </p>
+                <p>To implement the stack, it is required to maintain the pointer to the top of the stack, which is the
+                    last element to be inserted because we can access the elements only on the top of the stack.
+
+                </p>
+
+                <p>
+
+                    <b> LIFO( Last In First Out ): </b> <br>
+
+
+                    This strategy states that the element that is inserted last will come out first. You can take a pile
+                    of plates kept on top of each other as a real-life example. The plate which we put last is on the
+                    top and since we remove the plate that is at the top, we can say that the plate that was put last
+                    comes out first.
+                </p>
+                <p>
+                    <b>Basic Operations on Stack
+                    </b> <br>
+                    In order to make manipulations in a stack, there are certain operations provided to us.
+                    <li class="p"> <b> push()</b> to insert an element into the stack</li>
+                    <li class="p"><b>pop()</b> to remove an element from the stack</li>
+                    <li class="p"> <b>top()</b> Returns the top element of the stack</li>
+                    <li class="p"> <b>isEmpty()</b> returns true if stack is empty else false.</li>
+                    <li class="p"> <b>size()</b> returns the size of stack.</li>
+                </p>
+
+            </div>
+        </div>
+        <hr>
+        <div class="info" id="List">
+            <h2>Algorithm :</h2>
+            <p>
+                <b>PUSH:</b>
+                Adds an item to the stack. If the stack is full, then it is said to be an Overflow condition.
+                <b>Algorithm for push:</b> <br>
+         <code>
+            code 
+         </code>
+
+            </p>
+            <p>
+                <b>POP:</b>
+                Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition. <br>
+                <b>Algorithm for pop:</b> <br>
+         <code>
+            code 
+         </code>
+
+            </p>
+            <p>
+                <b>TOP:</b> 
+                Returns the top element of the stack. <br>
+                <b>Algorithm for top:</b> <br>
+         <code>
+            code 
+         </code>
+
+            </p>
+            <p>
+                <b>isEmpty:</b>
+                Returns true if the stack is empty, else false. <br>
+                <b>Algorithm for isEmpty:</b> <br>
+         <code>
+            code 
+         </code>
+
+            </p>
+
+
+
+
+            </ol>
+        </div>
+        <hr>
+        <div class="info" id="Target" style="padding-top: 90px">
+            <!-- heading -->
+
+
+            <div class="container">
+                <div class="container-header">
+                    <input type="number" placeholder="enter the values" class="text" required>
+                    <button class="push">Push</button>
+                    <button class="pop ">Pop</button>
+                    <button class="reset">Reset</button>
+                </div>
+
+                <div class="container-body">
+                    <div class="stack">
+                        <div class="main-stack-bucket"></div>
+                    </div>
+
+                    <div class="info1">
+                        <div class="sec1">
+                            <h3>Top of the Stack:-</h3>
+                            <button class="box"></button>
+                        </div>
+                        <div class="sec2">
+                            <h3>Last Pushed Item:-</h3>
+                            <button class="box"></button>
+                        </div>
+                        <div class="sec3">
+                            <h3>Last Popped Item:-</h3>
+                            <button class="box"></button>
+                        </div>
+                        <div class="sec3">
+                            <h3>Size of the Stack:-</h3>
+                            <button class="box">7</button>
+                        </div>
+
+                        <div class="massage-box">
+                            <h2>Message Box</h2>
+                            <div class="massage"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- script -->
+            <script src="./index.js"></script>
+
+        </div>
+
+        <hr>
+
+        <hr>
+        <div class="info" id="sim">
+            <h2>Performance</h2>
+
+
+            <h3>Complexity Analysis:</h3>
+            <p><b>Push() operation</b>
+            <ul>
+                <li class="p"><b>Time Complexity :</b>O(1), In the push function a single element is inserted at the
+                    last position. This takes a single memory allocation operation which is done in constant time.</li>
+                <li class="p"><b>Auxiliary Space:</b> O(1), As no extra space is being used. </li>
+            </ul>
+
+            </p>
+            <p><b>Pop() operation</b>
+            <ul>
+                <li class="p"><b>Time Complexity :</b>O(1), In array implementation, only an arithmetic operation is
+                    performed i.e., the top pointer is decremented by 1. This is a constant time function.</li>
+                <li class="p"><b>Auxiliary Space:</b> O(1), No extra space is utilized for deleting an element from the
+                    stack. </li>
+            </ul>
+
+            </p>
+            <p><b>isEmpty() operation</b>
+            <ul>
+                <li class="p"><b>Time Complexity :</b>O(1), It only performs an arithmetic operation to check if the
+                    stack is empty or not.</li>
+                <li class="p"><b>Auxiliary Space:</b> O(1), It requires no extra space.</li>
+            </ul>
+
+            </p>
+            <p><b>size() :</b>
+            <ul>
+                <li class="p"><b>Time Complexity :</b>O(1), because this operation just performs a basic arithmetic
+                    operation.</li>
+                <li class="p"><b>Auxiliary Space:</b>O(1) NO extra space is required to calculate the value of the top
+                    pointer.</li>
+            </ul>
+
+            </p>
+
+
+
+        </div>
+        <hr>
+        <div class="info" id="app">
+
+            <h2>Applications of Stack in real life </h2>
+            <ul>
+                <li class="p">CD/DVD stand.</li>
+                <li class="p">Stack of books in a book shop.
+                </li>
+                <li class="p">The history of a web browser is stored in the form of a stack.</li>
+                <li class="p">Call logs, E-mails, and Google photos in any gallery are also stored in form of a stack.
+                </li>
+                <li class="p">YouTube downloads and Notifications are also shown in LIFO </li>
+                <li class="p">Allocation of memory by an operating system while executing a process.</li>
+                <li class="p">Undo and Redo mechanism in text editors.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="info" id="Ex">Ex</div>
+        <hr>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
