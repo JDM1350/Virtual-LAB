@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="/style1.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <style>q
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 50px;
+            left: 0;
+            background-color: grey;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fbf8f8;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 2;
+            width: 100%;
+            height: 50px;
+
+
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-top: -5px;
+            border-radius: 25px;
+        }
+
+        hr {
+            margin: 0 5px;
+        }
+
+        .navbar {
+            height: 70px;
+
+            border: 2px solid black;
+            color: black;
+        }
+
+        li {
+            height: 70px;
+            font-size: larger;
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+
+        li a {
+            color: black;
+        }
+
+        .info {
+            width: 90%;
+            height: 100vh;
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+        .p{
+            font-size: 20px;
+        }
+
+        .code {
+            font-size: 16px;
+        }
+        #sim p{
+            font-size: 16px;
+        }
+      
+        h1{
+            text-align: center;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.isquareit.edu.in/"><img src="/i2it.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/index3.html"><i class="fas fa-home"></i>Home</a></li>
+
+                        <li><a href="#"><i class="fas fa-user-friends"></i>Team</a></li>
+                        <li><a href="#"><i class="fas fa-comment-alt"></i>Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="sidenav">
+        <a href="#intro">Aim</a>
+        <hr>
+        <a href="#Objective">Concepts</a>
+        <hr>
+        <a href="#List">Algorithm</a>
+        <hr>
+        <a href="#Target">Simulation</a>
+        <hr>
+        <a href="#sim">Performance</a>
+        <hr>
+        <a href="#app">Application</a>
+        <hr>
+        <a href="#Ex">Exericse</a>
+        <hr>
+
+    </div>
+
+    <div class="main">
+        <h2>Sidebar</h2>
+        <div class="info" id="intro">
+            <h1>Linear Search</h1> <hr>
+            <h3>Estimated Time</h3>
+            <p>1.5 hour</p>
+            <h3>learning Objectives of the Experiment</h3>
+            <p>In this experiment, we will be learning about: <br>
+
+               </p>
+        </div>
+        <hr>
+        <div class="info" id="Objective">
+         <div class="objective_content"> 
+              <p>
+                ∙ Linear search is the simplest method for searching. <br>
+∙ In Linear search technique of searching; the element is searched sequentially in the list. <br>
+∙ This method can be performed on a sorted or an unsorted list (usually arrays). <br>
+∙ In case of a sorted list searching starts from 0th element and continues until the element is 
+found from the list or the element whose value is greater than (assuming the list is sorted in 
+ascending order), the value being searched is reached. <br>
+∙ As against this, searching in case of unsorted list also begins from the 0th element and
+continues until the element or the end of the list is reached. <br>
+∙ The linear search algorithm searches all elements in the array sequentially.
+∙ Its best execution time is 1, whereas the worst execution time is n, where n is the total 
+number of items in the search array. <br>
+∙ It is the most simple search algorithm in data structure and checks each item in the set of 
+elements until it matches the search element until the end of data collection. <br>
+∙ When data is unsorted, a linear search algorithm is preferred. <br>
+Linear Search is defined as a sequential search algorithm that starts at one end and goes through each element of a list until the desired element is found, otherwise the search continues till the end of the data set. It is the easiest searching algorithm
+
+        </p>
+   
+        </div>
+        </div>
+        <hr>
+        <div class="info" id="List">
+            <h2>Algorithm :</h2>
+            <ol>
+                <p>step 1 - First, read the search element (Target element) in the array. </p>
+                <p>step 2 - In the second step compare the search element with the first element in the array.</p>
+                <p>step 3 - If both are matched, display “Target element is found” and terminate the Linear Search 
+                    function. </p>
+                <p>step 4 - If both are not matched, compare the search element with the next element in the array.</p>
+                <p>step 5 - In this step, repeat steps 3 and 4 until the search (Target) element is compared with the 
+                    last element of the array.</p>
+                <p>step 6 - If the last element in the list does not match, the Linear Search Function will be 
+                    terminated, and the message “Element is not found” will be displayed. </p>
+                <p>step 7 - stop</p>
+               
+
+
+            </ol>
+        </div>
+        <hr>
+        <div class="info" id="Target" style="padding-top: 0px">
+            <br />
+            <p class="header">Linear Search</p>
+        
+        
+            <div id="array"></div>
+            <br /><br />
+        
+            <div style="text-align: center">
+            <label for="fname">
+                Number to be Searched:
+            </label>
+            <input type="text" id="fname" name="fname" />
+            <br /><br />
+            <button id="btn"
+                    onclick="LinearSearch()">Search
+            </button>
+            <br />
+            <br />
+            <div id="text"></div>
+            </div>
+            <script src="/script1.js"></script>
+        </div>
+        <hr>
+    
+    <hr>
+    <div class="info" id="sim">
+        <h2>Performance</h2>
+        
+       
+        <h3>The Time Complexity and Space Complexity of the Linear Searching Algorithm</h3>
+      <ul>
+        <li class="p">Best Case Time Complexity of Linear Search: O(1)</li>
+        <li class="p">Average Case Time Complexity of Linear Search: O(N)</li>
+        <li class="p">Worst Case Time Complexity of Linear Search: O(N)</li>
+        <li class="p">Space Complexity of Linear Search: O(1)</li>
+        <li class="p">Number of comparisons in Best Case: 1</li>
+        <li class="p">Number of comparisons in Average Case: N/2 + N/(N+1)</li>
+        <li class="p">Number of comparisons in Worst Case: N</li>
+      </ul>
+
+
+    </div>
+    <hr>
+    <div class="info" id="app">
+
+        <h2>Applications of Linear Searching Algorithm </h2>
+        <p>
+            The Linear search algorithm has the following applications:
+            <ul>
+                <li class="p">Linear search can be applied to both single-dimensional and multi-dimensional arrays.</li>
+                <li class="p">Linear search is easy to implement and effective when the array contains only a few elements</li>
+                <li class="p">Linear Search is also efficient when the search is performed to fetch a single search in an unordered-List.</li>
+            </ul>
+        </p>
+    </div>
+    <hr>
+    <div class="info" id="Ex">Ex</div>
+    <hr>
+    </div>
+</div>
+</body>
+
+</html>

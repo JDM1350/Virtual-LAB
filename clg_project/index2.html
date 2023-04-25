@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="/style2.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 50px;
+            left: 0;
+            background-color: grey;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #fbf8f8;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            z-index: 2;
+            width: 100%;
+            height: 50px;
+
+
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-top: -5px;
+            border-radius: 25px;
+        }
+
+        hr {
+            margin: 0 5px;
+        }
+
+        .navbar {
+            height: 70px;
+
+            border: 2px solid black;
+            color: black;
+        }
+
+        li {
+            height: 70px;
+            font-size: larger;
+            padding-top: 10px;
+            padding-left: 10px;
+
+        }
+
+        li a {
+            color: black;
+        }
+
+        .info {
+            width: 90%;
+            height: 100vh;
+            padding-top: 100px;
+            padding-left: 50px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .code {
+            font-size: 16px;
+        }
+        #sim p{
+            font-size: 16px;
+        }
+      
+        h1{
+            text-align: center;
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://www.isquareit.edu.in/"><img src="/i2it.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/index3.html"><i class="fas fa-home"></i>Home</a></li>
+
+                        <li><a href="#"><i class="fas fa-user-friends"></i>Team</a></li>
+                        <li><a href="#"><i class="fas fa-comment-alt"></i>Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="sidenav">
+        <a href="#intro">Aim</a>
+        <hr>
+        <a href="#Objective">Concepts</a>
+        <hr>
+        <a href="#List">Algorithm</a>
+        <hr>
+        <a href="#Target">Simulation</a>
+        <hr>
+        <a href="#sim">Performance</a>
+        <hr>
+        <a href="#app">Application</a>
+        <hr>
+        <a href="#Ex">Exericse</a>
+        <hr>
+
+    </div>
+
+    <div class="main">
+        <h2>Sidebar</h2>
+        <div class="info" id="intro">
+            <h1>Shell Sort</h1> <hr>
+            <h3>Estimated Time</h3>
+            <p>1.5 hour</p>
+            <h3>learning Objectives of the Experiment</h3>
+            <p>In this experiment, we will be learning about: <br>
+
+                Given an unsorted array of numbers, generate a sorted array of numbers by applying Selection Sort
+                Demonstrate knowledge of time complexity of Selection Sort by counting the number of operations involved in each iteration.
+                Compare Selection Sort with other sorting algorithms and realise Selection Sort as a stable comparison sorting algorithm.</p>
+        </div>
+        <hr>
+        <div class="info" id="Objective">
+         <div class="objective_content"> 
+              <p>Shell sort is a highly efficient sorting algorithm and is based on insertion sort algorithm. This
+            algorithm avoids large shifts as in case of insertion sort, if the smaller value is to the far right and
+            has to be moved to the far left.
+        </p>
+        <p>This algorithm uses insertion sort on a widely spread elements, first to sort them and then sorts the
+            less widely spaced elements. This spacing is termed as interval. This interval is calculated based on
+            Knuth's formula as −</p>
+        <p>Knuth's Formula</p>
+        <p>h = h * 3 + 1 <br>
+            where −
+            <br> h is interval with initial value 1
+        </p>
+        <p> h is interval with initial value 1
+            This algorithm is quite efficient for medium-sized data sets as its average and worst-case complexity of
+            this algorithm depends on the gap sequence the best known is Ο(n), where n is the number of items. And
+            the worst case space complexity is O(n).</p>
+        </div>
+        </div>
+        <hr>
+        <div class="info" id="List">
+            <h2>Algorithm :</h2>
+            <ol>
+                <p>step 1 - Start</p>
+                <p>step 2 - Initialze the value of gap size. Example : h</p>
+                <p>step 3 - Divide the kist into smaller sub-part . each must have equal interval to h </p>
+                <p>step 4 - sort these sub-lists using insertion sort</p>
+                <p>step 5 - Repeat this step 2 unitl the lists is sorted</p>
+                <p>step 6 - Print a sorted list</p>
+                <p>step 7 - stop</p>
+                <p>
+                <h4>Pseudocode:
+
+                </h4>
+                <p class="code">
+
+                    public static void shellsort(Comparable[] list) <br>
+                    { <br>
+                    Comparable temp; <br>
+                    boolean swap; <br>
+                    for(int gap= list.length/2;gap>0;gap/=2) <br>
+                    for (int i=gap ; i < list.length;i++){ <br>
+                        Comparable tmp =list[i]; <br>
+                        int j= i ; <br>
+                        for(j>=gap && tmp.ComparableTo(list[j-gap])< 0; j-=gap ) <br>
+                            list[j]=list[j-gap];<br>
+                            list[j]=tmp; <br>
+                            }
+                            }
+                </p>
+
+                </p>
+
+
+            </ol>
+        </div>
+        <hr>
+        <div class="info" id="Target" style="padding-top: 0px">
+            <section class="data-container"></section>
+            <section id="ele"></section>
+            <span id="speed">Speed
+                <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+            </span>
+            <div style="margin: auto; width: fit-content">
+
+                <label>Enter number of array element:</label>
+                <input type="number" id="arrnum"><br>
+                <br>
+                <label>Enter array elements:</label>
+                <input type="number" id="text1"><br>
+                <button onclick="addnum()">Add</button>
+                <p id="demo"></p>
+
+                <!-- "Generate New Array" button -->
+                <button class="btn1" onclick="generate()" id="Button1">
+                    Generate New Array
+                </button>
+
+                <!-- "Shell Sort" button -->
+                <button class="btn2" onclick="ShellSort(),disable()" id="Button2">Shell Sort</button>
+                <script src="/script.js"></script>
+            </div>
+        </div>
+        <hr>
+    
+    <hr>
+    <div class="info" id="sim">
+        <h2>Performance</h2>
+        
+       
+        <h3>The Time Complexity of the Shell Sort Algorithm</h3>
+        <p>Complexity in the Worst-Case Scenario: Less Than or Equal to O (n2)
+            Shell sort's worst-case complexity is always less than or equal to O. (n2).
+            </p>
+            <p>The worst-case complexity for shell sort, according to the Poonen Theorem, is (N log N)2/(log log N)2, or (N log N)2/log log N), or (N(log N)2), or something in between.</p>
+            <p>Complexity in the Best Case: O(n*Log n) 
+                The total number of comparisons for each interval (or increment) is equal to the size of the array when it is already sorted.
+                </p>
+
+                <p>
+                    Complexity in the Average Case: O(n*log n) 
+                    It's somewhere around O. (n1.25).
+                       
+                </p>
+                <p>
+                    The degree of complexity is determined by the interval picked. The above complexity varies depending on the increment sequences used. The best increment sequence has yet to be discovered.  
+                </p>
+                <h3>The Space Complexity of the Shell Sort Algorithm</h3>
+                <p>The space complexity of the shell sort algorithm is O(1).
+                    After learning about the complexity of the shell sort algorithm, you will look at some of its applications.
+                    </p>
+
+
+    </div>
+    <hr>
+    <div class="info" id="app">
+
+        <h2>Applications of Shell Sort Algorithm </h2>
+        <p>
+            <ul style="font-size: 25px">
+                Shell Sort can be used for a variety of purposes, including:
+              <p>Shell sort has a more significant cache miss percentage than quicksort and executes more operations.
+            </p>
+           <p>However, some versions of the qsort function in the C standard library geared at embedded devices utilize it instead of quicksort because it requires less code and does not use the call stack. The uClibc library, for example, uses Shell sort. The Linux kernel has a Shell Sort implementation for similar reasons.</p>
+           <p>Shell sort can also be used as a sub-algorithm of the introspective sort to sort short subarrays and avoid slowdowns when the recursion depth exceeds a certain threshold. This method is used in the bzip2 compression algorithm.</p>
+            </ul>
+        </p>
+    </div>
+    <hr>
+    <div class="info" id="Ex">Ex</div>
+    <hr>
+    </div>
+</div>
+</body>
+
+</html>
