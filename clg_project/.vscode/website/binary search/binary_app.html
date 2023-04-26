@@ -13,9 +13,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
-  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="../css.css">
   <style>
-      .section2 li{
+    .section2 ul{
+        list-style: inside;
+    }
+    .section2 li{
         font-weight: lighter;
         font-size: 20px;
     }
@@ -60,8 +63,8 @@
         </ul>
       </div>
       <div class="main">
-        <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-            href="list.html">Semester-1 Experiments</a> > <a href="binary_aim.html">Binary Search</a> > <a href="binary_algo.html">Algorithm</a>  </h1>
+        <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+            href="../list.html">Semester-1 Experiments</a> > <a href="binary_aim.html">Binary Search</a> > <a href="binary_app.html">Application</a>  </h1>
     
         <div class="aim2">
           <div class="section1">
@@ -77,23 +80,19 @@
           </div>
           <div class="section2">
             <div id="intro" class="intro">
-              <h2>Algorithm</h2>
-            <ul>
-              <li>step 1 - Start</li>
-              <li>step 2 - Set the low index to the first element of the array and the high index to the last element. </li>
-              <li>step 3 - Set the middle index to the average of the low and high indices.
-                 <ul >
-                  <li>If the element at the middle index is the target element, return the middle index.</li>
-                  <li>Otherwise, based on the value of the key to be found and the value of the middle element, decide the next search space.</li>
-                  <li>If the target is less than the element at the middle index, set the high index to middle index – 1.</li>
-                  <li>If the target is greater than the element at the middle index, set the low index to middle index + 1.</li>
+              <h2>Applications of Binary Searching Algorithm</h2>
+            <ul style="list-style: none;">
+                <li >
+                    <ul>The binary search algorithm has the following applications:
+                       <li>Find the first value greater than or equal to x in a given array of sorted integers</li>
+                       <li>Find the peak of an array which increases and then decreases</li>
+                       <li>Debugging a linear piece of code</li>
+                       <li> Figuring out resource requirements for a large system</li>
+                       <li>Semiconductor test programs</li>
+                    </ul>
 
-                 </ul> 
-              </li>
-              <li>step 4 - Perform step 2 repeatedly until the target element is found or the search space is exhausted.</li>
-             
-              <li>step 5 - Print a sorted list</li>
-              <li>step 6 - stop</li>
+                </li>
+
             </ul>
     
             </div>
