@@ -13,22 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
-  <link rel="stylesheet" href="css.css">
-  <style>
-    .section2 ul{
-        list-style: inside;
-    }
-    .section2 li{
-        font-weight: lighter;
-        font-size: 20px;
-    }
-    .section2 b{
-        font-weight: bold;
-    }
-    .section2 {
-        padding-bottom: 15vh;
-    }
-  </style>
+  <link rel="stylesheet" href="../css.css">
 </head>
 <body>
     <header>
@@ -69,8 +54,8 @@
         </ul>
       </div>
       <div class="main">
-        <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-            href="list.html">Semester-1 Experiments</a> > <a href="stack_aim.html">Stack</a> > <a href="stack_per.html">Performance</a> </h1>
+        <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+            href="../list.html">Semester-1 Experiments</a> > <a href="stack_aim.html">Stack</a> > <a href="stack_algo.html">Algorithm</a> </h1>
     
         <div class="aim2">
           <div class="section1">
@@ -86,37 +71,13 @@
           </div>
           <div class="section2">
             <div id="intro" class="intro">
-              <h2>Complexity analysis:</h2>
-              <p>
-                <b>Push() operation :</b>
-                <ul >
-                    <li> <b>Time Complexity :</b> O(1), In the push function a single element is inserted at the last position. This takes a single memory allocation operation which is done in constant time.</li>
-                    <li> <b>Auxiliary Space :</b> O(1), As no extra space is being used.</li>
-                </ul>
-              </p>
-              <p>
-                <b>Pop() operation :</b>
-                <ul >
-                    <li> <b>Time Complexity :</b> O(1), In array implementation, only an arithmetic operation is performed i.e., the top pointer is decremented by 1. This is a constant time function.</li>
-                    <li> <b>Auxiliary Space :</b>O(1), No extra space is utilized for deleting an element from the stack.</li>
-                </ul>
-              </p>
-              <p>
-                <b>isEmpty() operation :</b>
-                <ul >
-                    <li> <b>Time Complexity :</b>O(1), It only performs an arithmetic operation to check if the stack is empty or not.</li>
-                    <li> <b>Auxiliary Space :</b> O(1), It requires no extra space.</li>
-                </ul>
-              </p>
-              <p>
-                <b>size() operation :</b>
-                <ul >
-                    <li> <b>Time Complexity :</b> O(1),becausee this operation just performs a basic arithmetic operation</li>
-                    <li> <b>Auxiliary Space :</b> O(1), NO extra space  is required to calculate the value of the top pointer</li>
-                </ul>
-              </p>
-             
-             
+              <h2>Algorithm</h2>
+              <p><b>PUSH : </b> Adds an item to the stack. If the stack is full, then it is said to be an Overflow condition.</p>
+              <p><b>POP :</b>Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.</p>
+              <p><b>TOP :</b>returns the top element of the stack</p>
+              <p><b>isEmpty :</b>returns true if the stack is empty , else false</p>
+
+    
             </div>
     
           </div>

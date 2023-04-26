@@ -13,7 +13,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
-  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="../css.css">
+ 
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        .section2{
+            padding-bottom: 20vh;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -54,8 +61,8 @@
         </ul>
       </div>
       <div class="main">
-        <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-            href="list.html">Semester-1 Experiments</a> > <a href="stack_aim.html">Stack</a> > <a href="stack_algo.html">Algorithm</a> </h1>
+        <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+            href="../list.html">Semester-1 Experiments</a> > <a href="stack_aim.html">Stack</a> > <a href="stack_demo.html">Demo</a> </h1>
     
         <div class="aim2">
           <div class="section1">
@@ -71,13 +78,54 @@
           </div>
           <div class="section2">
             <div id="intro" class="intro">
-              <h2>Algorithm</h2>
-              <p><b>PUSH : </b> Adds an item to the stack. If the stack is full, then it is said to be an Overflow condition.</p>
-              <p><b>POP :</b>Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.</p>
-              <p><b>TOP :</b>returns the top element of the stack</p>
-              <p><b>isEmpty :</b>returns true if the stack is empty , else false</p>
-
-    
+                <div class="info" id="Target" >
+                    <!-- heading -->
+        
+        
+                    <div class="container">
+                        <div class="container-header">
+                            <input type="number" placeholder="enter the values" class="text" id="input" required>
+                            <button class="push">Push</button>
+                            <button class="pop ">Pop</button>
+                            <button class="reset">Reset</button>
+                        </div>
+        
+                        <div class="container-body">
+                            <div class="stack">
+                                <div class="main-stack-bucket"></div>
+                            </div>
+        
+                            <div class="info1">
+                                <div class="sec1">
+                                    <h3>Top of the Stack:-</h3>
+                                    <button class="box"></button>
+                                </div>
+                                <div class="sec2">
+                                    <h3>Last Pushed Item:-</h3>
+                                    <button class="box"></button>
+                                </div>
+                                <div class="sec3">
+                                    <h3>Last Popped Item:-</h3>
+                                    <button class="box"></button>
+                                </div>
+                                <div class="sec3">
+                                    <h3>Size of the Stack:-</h3>
+                                    <button class="box">7</button>
+                                </div>
+        
+                                <div class="massage-box">
+                                    <h2>Message Box</h2>
+                                    <div class="massage"></div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+        
+                    <!-- script -->
+                    <script src="stack.js"></script>
+        
+                </div>
             </div>
     
           </div>
@@ -121,8 +169,8 @@
         </div>
       </footer>
     
+  <script src="function.js"></script>
     
-    
-      <script src="function.js"></script>
+      
 </body>
 </html>
