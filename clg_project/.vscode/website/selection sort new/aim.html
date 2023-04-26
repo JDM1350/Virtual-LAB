@@ -13,21 +13,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
-  <link rel="stylesheet" href="css.css">
-  <link href="/style1.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style_copy.css">
-  <style>
-    .section2 ul{
-        list-style: inside;
-    }
-    .section2 li{
-        font-weight: lighter;
-        font-size: 20px;
-    }
-    /* #array{
-      width: 100%;
-    } */
-  </style>
+  <link rel="stylesheet" href="../css.css">
 </head>
 <body>
     <header>
@@ -68,8 +54,8 @@
         </ul>
       </div>
       <div class="main">
-        <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-            href="list.html">Semester-1 Experiments</a> > <a href="aim.html">Selection Sort</a> > <a href="demo.html">Demo</a>  </h1>
+        <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+            href="../list.html">Semester-1 Experiments</a> > <a href="aim.html">Selection Sort</a>  </h1>
     
         <div class="aim2">
           <div class="section1">
@@ -84,35 +70,12 @@
             </ul>
           </div>
           <div class="section2">
-            <center><h2 style="justify-content: center ; color: rgb(17, 63, 201);">Selection Sort</h2></center>
-	<div class="partition"></div>
-	<marquee><b>Instructions</b>: 1) First enter the number of elements. 2) Enter numbers one by one by clicking on Add button 3) Click on Generate Graph button to generate graph. 4) Click on start sorting button to sort the numbers</marquee>
-	<br><br><button class="btnaddnum" onclick="window.location.reload()" style="font-size: 20px;" >Reset</button>
-	
-	
-	<section class="data-container"></section>
-	<section id="ele"></section>
-	
-	<div style="margin: auto; width: fit-content">
-		
-		<label>Enter number of Element:</label>
-	<input type="number"  id="arrnum"><br>
-<br>
-		<label>Enter Elements:</label>
-		<input type="number" id="text1" >
-	<button class="btnaddnum" onclick="addnum()"  >Add</button>
-	<p id="demo"></p>
-    <p id="index_dis"></p>
-
-		<!-- "Generate New Array" button -->
-		<button class="btnadd" onclick="generate()" id="Button1">
-			Generate Array
-		</button>
-
-		<!-- "Shell Sort" button -->
-		<button class="btnadd" onclick="SelectionSort(),disable()"
-				id="Button2">Start Sorting</button>
-	</div>
+            <div id="intro" class="intro">
+              <h2>Selection sort</h2>
+              <p style="text-align: justify; text-justify: inter-word; margin-top: 50px;">
+                The aim of selection sort is to sort an array of elements in ascending or descending order by repeatedly finding the minimum or maximum element in the unsorted part of the array and swapping it with the element at the beginning of the unsorted part.
+              </p>
+            </div>
     
           </div>
         </div>
@@ -158,7 +121,5 @@
     
     
       <script src="function.js"></script>
-      <script src="selection.js"></script>
-      
 </body>
 </html>

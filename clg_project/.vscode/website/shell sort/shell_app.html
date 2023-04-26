@@ -14,9 +14,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
+  <link rel="stylesheet" href="shell.css">
+<style>
+  .section2 ul{
+        list-style: inside;
+        font-weight: lighter;
+    }
+    .section2 li{
+        font-weight: lighter;
+        font-size: 20px;
+    }
+</style>
 
-
- <link rel="stylesheet" href="shell.css">
 </head>
 
 <body>
@@ -58,8 +67,8 @@
     </ul>
   </div>
   <div class="main">
-    <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-        href="list.html">Semester-1 Experiments</a> > <a href="shell.html">Shell sort</a> </h1>
+    <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+        href="../list.html">Semester-1 Experiments</a> > <a href="shell.html">shell sort</a> > <a href="shell_app.html">Application</a> </h1>
 
     <div class="aim2">
       <div class="section1">
@@ -74,19 +83,18 @@
         </ul>
       </div>
       <div class="section2">
-        <div id="intro" class="intro">
-          <h2>Shell Sort</h2>
-          <h3>Estimated Time</h3>
-          <p>1.5 hour</p>
-          <h3>Learning Objective of the Experiments</h3>
-          <p>In this experiment, we will be learning about:
-            Given an unsorted array of numbers, generate a sorted array of numbers by applying Shell Sort
-            Demonstrate knowledge of time complexity of Shell Sort by counting the number of operations involved in
-            each iteration. Compare Shell Sort with other sorting algorithms and realise Shell Sort as a stable
-            comparison sorting algorithm.</p>
-
-        </div>
-
+      <h2>Applications of Shell Sort Algorithm</h2>
+      <ul>
+        <li>
+            Shell Sort can be used for a variety of purposes, including:
+        <ul>
+            <li>Shell sort has a more significant cache miss percentage than quicksort and executes more operations.</li>
+        <li>However, some versions of the qsort function in the C standard library geared at embedded devices utilize it instead of quicksort because it requires less code and does not use the call stack. The uClibc library, for example, uses Shell sort. The Linux kernel has a Shell Sort implementation for similar reasons.</li>
+        <li>Shell sort can also be used as a sub-algorithm of the introspective sort to sort short subarrays and avoid slowdowns when the recursion depth exceeds a certain threshold. This method is used in the bzip2 compression algorithm.</li>
+        </ul>
+        </li>
+        
+      </ul>
       </div>
     </div>
   </div>

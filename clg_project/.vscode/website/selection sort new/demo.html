@@ -13,7 +13,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
-  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="../css.css">
+  <link href="style1.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../style_copy.css">
   <style>
     .section2 ul{
         list-style: inside;
@@ -22,6 +24,9 @@
         font-weight: lighter;
         font-size: 20px;
     }
+    /* #array{
+      width: 100%;
+    } */
   </style>
 </head>
 <body>
@@ -63,38 +68,51 @@
         </ul>
       </div>
       <div class="main">
-        <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-            href="list.html">Semester-1 Experiments</a> > <a href="aim.html">Selection sort</a> > <a href="performance.html">Performance</a>  </h1>
+        <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+            href="../list.html">Semester-1 Experiments</a> > <a href="aim.html">Selection Sort</a> > <a href="demo.html">Demo</a>  </h1>
     
         <div class="aim2">
           <div class="section1">
             <ul>
     
-              <li><a href="aim.html">Aim </a></li>
-              <li><a href="concept.html">Concept</a></li>
-              <li><a href="algorithm.html">Algorithm</a></li>
-              <li><a href="demo.html">Demo</a></li>
-              <li><a href="performance.html">Performance</a></li>
-              <li><a href="application.html">Application</a></li>
+                <li><a href="aim.html">Aim </a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="algorithm.html">Algorithm</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="performance.html">Performance</a></li>
+                <li><a href="application.html">Application</a></li>
             </ul>
           </div>
           <div class="section2">
-            <div id="intro" class="intro">
-              <h2>Performance</h2>
-            <ul style="list-style: none;">
-                <li >The Time Complexity and Space Complexity of the Selection sort Algorithm :
-                    <ul>
-                        <li> Time Complexity of Selection sort: O(n'2)</li>
-                        
-                        <li>Space Complexity of Selection sort: O(1)</li>
-                       
-                    </ul>
+            <center><h2 style="justify-content: center ; color: rgb(17, 63, 201);">Selection Sort</h2></center>
+	<div class="partition"></div>
+	<marquee><b>Instructions</b>: 1) First enter the number of elements. 2) Enter numbers one by one by clicking on Add button 3) Click on Generate Graph button to generate graph. 4) Click on start sorting button to sort the numbers</marquee>
+	<br><br><button class="btnaddnum" onclick="window.location.reload()" style="font-size: 20px;" >Reset</button>
+	
+	
+	<section class="data-container"></section>
+	<section id="ele"></section>
+	
+	<div style="margin: auto; width: fit-content">
+		
+		<label>Enter number of Element:</label>
+	<input type="number"  id="arrnum"><br>
+<br>
+		<label>Enter Elements:</label>
+		<input type="number" id="text1" >
+	<button class="btnaddnum" onclick="addnum()"  >Add</button>
+	<p id="demo"></p>
+    <p id="index_dis"></p>
 
-                </li>
+		<!-- "Generate New Array" button -->
+		<button class="btnadd" onclick="generate()" id="Button1">
+			Generate Array
+		</button>
 
-            </ul>
-    
-            </div>
+		<!-- "Shell Sort" button -->
+		<button class="btnadd" onclick="SelectionSort(),disable()"
+				id="Button2">Start Sorting</button>
+	</div>
     
           </div>
         </div>
@@ -140,5 +158,7 @@
     
     
       <script src="function.js"></script>
+      <script src="selection.js"></script>
+      
 </body>
 </html>

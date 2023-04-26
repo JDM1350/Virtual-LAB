@@ -14,18 +14,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="/footer/footer/footer.css">
-  <link rel="stylesheet" href="shell.css">
-<style>
-  .section2 ul{
-        list-style: inside;
-        font-weight: lighter;
-    }
-    .section2 li{
-        font-weight: lighter;
-        font-size: 20px;
-    }
-</style>
 
+  <link rel="stylesheet" href="shell.css">
+
+  
 </head>
 
 <body>
@@ -67,8 +59,8 @@
     </ul>
   </div>
   <div class="main">
-    <h1>Computer Science and Engineering > <a href="index.html">Data Structures</a> > <a
-        href="list.html">Semester-1 Experiments</a> > <a href="shell.html">shell sort</a> > <a href="shell_app.html">Application</a> </h1>
+    <h1>Computer Science and Engineering > <a href="../index.html">Data Structures</a> > <a
+        href="../list.html">Semester-1 Experiments</a> > <a href="shell.html">shell sort</a> > <a href="shell_per.html">Performance</a> </h1>
 
     <div class="aim2">
       <div class="section1">
@@ -83,18 +75,19 @@
         </ul>
       </div>
       <div class="section2">
-      <h2>Applications of Shell Sort Algorithm</h2>
-      <ul>
-        <li>
-            Shell Sort can be used for a variety of purposes, including:
-        <ul>
-            <li>Shell sort has a more significant cache miss percentage than quicksort and executes more operations.</li>
-        <li>However, some versions of the qsort function in the C standard library geared at embedded devices utilize it instead of quicksort because it requires less code and does not use the call stack. The uClibc library, for example, uses Shell sort. The Linux kernel has a Shell Sort implementation for similar reasons.</li>
-        <li>Shell sort can also be used as a sub-algorithm of the introspective sort to sort short subarrays and avoid slowdowns when the recursion depth exceeds a certain threshold. This method is used in the bzip2 compression algorithm.</li>
-        </ul>
-        </li>
-        
-      </ul>
+       <h2>Performance</h2>
+       <h3>The Time Complexity of the Shell Sort Algorithm</h3>
+       <p>Complexity in the Worst-Case Scenario: Less Than or Equal to O (n2) Shell sort's worst-case complexity is always less than or equal to O. (n2).</p>
+       <p>The worst-case complexity for shell sort, according to the Poonen Theorem, is (N log N)2/(log log N)2, or (N log N)2/log log N), or (N(log N)2), or something in between.</p>
+       <p>Complexity in the Best Case: O(n*Log n) The total number of comparisons for each interval (or increment) is equal to the size of the array when it is already sorted.</p>
+       <p>Complexity in the Average Case: O(n*log n) It's somewhere around O. (n1.25).</p>
+
+       <p>The degree of complexity is determined by the interval picked. The above complexity varies depending on the increment sequences used. The best increment sequence has yet to be discovered.</p>
+
+       <h3>The Space Complexity of the Shell Sort Algorithm</h3>
+       <p>The space complexity of the shell sort algorithm is O(1). After learning about the complexity of the shell sort algorithm, you will look at some of its applications.
+
+       </p>
       </div>
     </div>
   </div>
@@ -138,7 +131,7 @@
 
 
 
-  <script src="function.js"></script>
+ <script src="function.js"></script>
 </body>
 
 </html>
